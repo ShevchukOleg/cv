@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "Courgette";
+  src: url("./assets/fonts/Courgette/Courgette-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("./assets/fonts/Lora/Lora-VariableFont_wght.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("./assets/fonts/Lora/Lora-Italic-VariableFont_wght.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("./assets/fonts/Lora/Lora-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("./assets/fonts/Lora/Lora-SemiBold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url("./assets/fonts/Aleo/Aleo-VariableFont_wght.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kite One";
+  src: url("./assets/fonts/Kite_One/KiteOne-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.2;
+  user-select: none;
+}
+
+body {
+  size: A4;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+  --max-indent: 38px;
+  --medium-indent: 32px;
+  --small-indent: 16px;
+  --pb: 0.75rem;
+  --px: 1.5rem;
+  --defColor: rgb(44, 52, 60);
+  --primaryColor: rgb(141, 189, 201);
+  --secondaryColor: rgb(191, 202, 214);
+  --ternaryColor: rgb(57, 67, 77);
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-family: "Lora", cursive;
+  margin-bottom: var(--small-indent);
+}
+
+h3 {
+  font-family: "Lora", serif;
+  font-size: 1.55rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: var(--medium-indent);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.bg-milk-color {
+  background-color: rgb(248, 248, 248);
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 2px;
+}
+
+.mb-2 {
+  margin-bottom: 4px;
+}
+
+/* Font styles */
+
+.text-small {
+  font-size: 0.8rem;
+  font-style: normal;
+}
+
+.cursive-soft {
+  text-align: justify;
+  font-family: "Courgette", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  user-select: none;
+}
+
+.small-indent {
+  text-indent: 20px;
+}
+
+.description-font {
+  font-family: "Aleo", sans-serif;
+  font-style: normal;
+  text-indent: 20px;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--ternaryColor);
+}
+
+.item-font {
+  font-family: "Aleo", sans-serif;
+  font-style: normal;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.container__subheader {
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+/* Orientation */
+
+.horizontal-list {
+  display: flex;
+  justify-content: flex-start;
+  user-select: none;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-family: "Aleo", sans-serif;
+  font-style: normal;
+}
+
+.page {
+  width: 100vv;
+  display: flex;
+  color: var(--defColor);
+}
+
+.left-part {
+  flex: 0 1 25%;
+}
+
+.person-info {
+  background-color: var(--secondaryColor);
+  padding: var(--medium-indent) var(--px) var(--pb);
+}
+
+.person-info li,
+.person-info li a {
+  font-style: normal;
+  color: var(--ternaryColor);
+}
+
+.person-info li i {
+  margin-right: 6px;
+}
+
+.indent-main {
+  padding: var(--medium-indent) var(--px);
+}
+
+.indent-main h3 {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: var(--small-indent);
+}
+
+.indent-main li {
+  margin-left: 4px;
+}
+
+ul.with-markers {
+  line-height: 1.3;
+}
+
+ul.with-markers li::before {
+  position: relative;
+  left: -2px;
+  content: "\2714";
+}
+
+.indent-main ul.separated-strings li:not(:first-child) {
+  margin-top: 10px;
+}
+.right-part {
+  flex: 0 1 75%;
+  padding: var(--pt) var(--px);
+}
+
+.right-part .right-part__container {
+  padding: var(--medium-indent) var(--px) 3px;
+}
+
+.right-part .right-part__container h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-weight: 500;
+}
